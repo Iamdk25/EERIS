@@ -1,15 +1,29 @@
 import express from 'express';
-import fs from 'fs';
+// import dotenv from 'dotenv';
+// import fs from 'fs';
+// import connectDB from './config/db.js';
+// import receiptRoutes from './routes/receiptRoutes.js';
+// import authRoutes from './routes/authRoutes.js';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { exec } from 'child_process';
 import path from 'path';
 import { fileURLToPath } from 'url'; // Required for __dirname alternative
+//import db from './src/backend/db.js';
+
 
 // __dirname workaround for ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const coursesFile = path.join(__dirname,'src', 'data', 'usf_courses1.json'); // Path to the course data JSON
+
+// dotenv.config();
+// connectDB();
+
+// app.use(express.json());
+// app.use(cors());
+
+// app.use('/api/receipts', receiptRoutes);
+// app.use('/api/auth', authRoutes);
 
 
 const app = express();
