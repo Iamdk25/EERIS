@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-//import axios from 'axios';
+import axios from 'axios';
 import { useAuth } from '../../AuthContext.jsx'; // Correct import path
 import './LoginPage.css';
 
